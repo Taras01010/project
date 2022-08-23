@@ -37,6 +37,9 @@ body{
 .col-7{
     width: 58.33333%;
 }
+.col-9{
+    width: 75%;
+}
 .col-12{
     width: 100%;
 }
@@ -56,6 +59,8 @@ body{
     float: left;
     width: 25%;
     border-left: 1px solid #2c71b8;
+    position: relative;
+    list-style: none;
 }
 .menu li:last-child{
     border-right: 1px solid #2c71b8;
@@ -72,8 +77,29 @@ body{
     text-align: center;
     line-height: 50px;
     font-weight: 300;
+    padding: 0 10px;
 }
 .menu a:hover{
     background-color: #2c71b8;
     color: white;
 }
+.menu ul{
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    padding: 0;
+}
+.menu li:hover ul{
+    display: block;
+}
+.form-search-header input{
+    background-color: transparent;
+    border: none;
+}
+.form-search-header input:focus{
+    outline: none;
+}
+
+
+
